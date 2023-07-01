@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.11/tailwind.min.css" 
+        integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    >
+    <link rel="stylesheet" href="index.css">
+    <title>Fast CheckBox</title>
+</head>
+<body>
+    
+    <div class="questionary">
+        <h2>What would you like to learn?</h2>
+
+        <div class="toggle-container">
+            <input type="checkbox" id="good" class="toggle">
+            <label for="good" class="label">
+                <div class="ball"></div>
+            </label>
+            <span>Good</span>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="cheap" class="toggle">
+            <label for="cheap" class="label">
+                <div class="ball"></div>
+            </label>
+            <span>Cheap</span>
+        </div>
+
+        <div class="toggle-container">
+            <input type="checkbox" id="fast" class="toggle">
+            <label for="fast" class="label">
+                <div class="ball"></div>
+            </label>
+            <span>Fast</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
