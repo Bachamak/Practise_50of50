@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Oswald:wght@400;600&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #e5e4e1;
+  font-family: 'Mulish', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.panel-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 90%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  max-width: 400px;
+}
+
+.panel-container strong {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.rating:hover,
+.rating:active {
+  color: #f1c40f;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.rating small {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating:hover small,
+.rating.active small {
+  color: #111;
+}
+
+img {
+  width: 80px;
+}
+
+.btn {
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #f39c12;
+    transform: scale(1.08);
+  }
+  &:active {
+    background-color: #e67e22;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1);
+  }
+}
+
+.fa-heart {
+  max-width: 100px;
+  max-height: 100px;
+  color: #e74c3c;
+  font-size: 1.5rem;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.08);
+  }
+  &:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1);
+  }
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
