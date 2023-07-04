@@ -45,7 +45,7 @@ function addTodo(todo) {
 
         input.value = ''
 
-        updateLS( )
+        updateLS()
     }
 }
 
